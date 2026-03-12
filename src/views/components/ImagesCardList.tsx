@@ -118,22 +118,22 @@ const ImagesCardList = ({ clickedRef, currentPage, typeContent, dataImgArray }: 
   const checkIsPhotoSummary = (dataProps: any, pageProps: any) => {
     if (pageProps === 1) {
       if (dataProps.includes('VMT') || dataProps.includes('HHT') || dataProps.includes('KPI')) {
-        let widthGrid = 6
+        const widthGrid = 6
         return widthGrid
       }
 
-      let widthGrid = 12
+      const widthGrid = 12
       return widthGrid
     }
   }
 
   const checkIsPhotoStackSize = (pageProps: any) => {
     if (pageProps === 2) {
-      let imgSize = '50px'
+      const imgSize = '50px'
       return imgSize
     }
 
-    let imgSize = '300px'
+    const imgSize = '300px'
     return imgSize
   }
 

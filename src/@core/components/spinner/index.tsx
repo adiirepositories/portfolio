@@ -5,7 +5,7 @@ import CircularProgress from '@mui/material/CircularProgress'
 
 const FallbackSpinner = ({ sx }: { sx?: BoxProps['sx'] }) => {
   // ** Hook
-  const theme = useTheme()
+  // const theme = useTheme()
 
   return (
     <Box

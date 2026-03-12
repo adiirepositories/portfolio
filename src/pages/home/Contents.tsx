@@ -1,5 +1,6 @@
 // ** MUI Imports
 import Card from '@mui/material/Card'
+
 // import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import CardHeader from '@mui/material/CardHeader'
@@ -7,6 +8,7 @@ import CardContent from '@mui/material/CardContent'
 
 import ImagesCardList from 'src/views/components/ImagesCardList'
 import MyTimeline from './MyTimeline'
+
 // import { Box } from '@mui/system'
 import Button from '@mui/material/Button'
 import Box from '@mui/system/Box'
@@ -26,6 +28,7 @@ const Contents = ({
   dataProps: any
   imgUrl: any
   indexPageClicked: number
+
   // pageRef: any
 }) => {
   return (
@@ -82,6 +85,7 @@ const Contents = ({
           sx={{
             fontSize: '1.2rem',
             mb: 6,
+
             // color: indexPageClicked == 1 ? 'red'
             ...(indexPageClicked === 1 && { color: 'red' }) // ✅ Conditionally adds color
           }}
@@ -92,12 +96,7 @@ const Contents = ({
         <Typography sx={{ fontFamily: 'monospace' }}>{appContent}</Typography>
       </CardContent>
 
-      <ImagesCardList
-        // clickedRef={pageRef}
-        currentPage={indexPageClicked}
-        typeContent={appContentName}
-        dataImgArray={imgUrl as any}
-      />
+      <ImagesCardList currentPage={indexPageClicked} typeContent={appContentName} dataImgArray={imgUrl as any} />
       {indexPageClicked == 0 && <MyTimeline />}
     </Card>
   )

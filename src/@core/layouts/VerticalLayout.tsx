@@ -158,9 +158,9 @@ import themeConfig from 'src/configs/themeConfig'
 import { LayoutProps } from 'src/@core/layouts/types'
 
 // ** Components
-import AppBar from './components/vertical/appBar'
+// import AppBar from './components/vertical/appBar'
 import Customizer from 'src/@core/components/customizer'
-import Navigation from './components/vertical/navigation'
+// import Navigation from './components/vertical/navigation'
 import Footer from './components/shared-components/footer'
 import ScrollToTop from 'src/@core/components/scroll-to-top'
 
@@ -193,17 +193,18 @@ const VerticalLayout = (props: LayoutProps) => {
   const { hidden, settings, children, scrollToTop, footerProps, contentHeightFixed, verticalLayoutProps } = props
 
   // ** Vars
-  const { skin, navHidden, contentWidth } = settings
+  // const { skin, navHidden, contentWidth } = settings
+  const { skin, contentWidth } = settings
   const { navigationSize, disableCustomizer, collapsedNavigationSize } = themeConfig
-  const navWidth = navigationSize
-  const navigationBorderWidth = skin === 'bordered' ? 1 : 0
-  const collapsedNavWidth = collapsedNavigationSize
+  // const navWidth = navigationSize
+  // const navigationBorderWidth = skin === 'bordered' ? 1 : 0
+  // const collapsedNavWidth = collapsedNavigationSize
 
   // ** States
   const [navVisible, setNavVisible] = useState<boolean>(false)
 
   // ** Toggle Functions
-  const toggleNavVisibility = () => setNavVisible(!navVisible)
+  // const toggleNavVisibility = () => setNavVisible(!navVisible)
 
   return (
     <>
