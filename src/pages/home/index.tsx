@@ -103,16 +103,16 @@ const Home = () => {
 
     if (appContentProps == 'app0') {
       setappContent(projects.rtgText)
-      setappContentName('VMT - RTG/RS')
+      setappContentName('VMT - RTG/RS | https://1eaglertg.bnct-id.com/home/')
     } else if (appContentProps == 'app1') {
       setappContent(projects.hhtText)
-      setappContentName('HHT - Berth/Yard')
+      setappContentName('HHT - Berth/Yard | https://1eaglehht.bnct-id.com/home/')
     } else if (appContentProps == 'app2') {
       setappContent(projects.trlText)
-      setappContentName('VMT - Trailer')
+      setappContentName('VMT - Trailer | https://1eagletrl.bnct-id.com/home/')
     } else if (appContentProps == 'app3') {
       setappContent(projects.kpiDashboard)
-      setappContentName('KPI - Dashboard')
+      setappContentName('KPI - Dashboard | https://dashboard-b.bnct-id.com/home/')
     } else {
       setappContent(appContentProps)
       setappContentName(' ')
@@ -336,6 +336,8 @@ const Home = () => {
               dataProps={pageClicked}
               imgUrl={imgUrl}
               indexPageClicked={indexPageClicked}
+              appUrl={'https://1eaglertg.bnct-id.com/home/'}
+
               // pageRef={handleClickRefFromChild}
             />
           </Grid>

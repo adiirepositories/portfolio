@@ -19,7 +19,8 @@ const Contents = ({
   textContent,
   dataProps,
   imgUrl,
-  indexPageClicked
+  indexPageClicked,
+  appUrl
 }: // pageRef
 {
   appContent: any
@@ -28,6 +29,7 @@ const Contents = ({
   dataProps: any
   imgUrl: any
   indexPageClicked: number
+  appUrl: any
 
   // pageRef: any
 }) => {
