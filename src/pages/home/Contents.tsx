@@ -72,7 +72,7 @@ const Contents = ({
             }
           }}
           variant='contained'
-          href='/cv/cv.docx'
+          href='/cv/CV_Muhammad_Badri_Yusup.pdf'
           download
         >
           Download CV
